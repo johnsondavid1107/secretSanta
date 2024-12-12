@@ -1,0 +1,28 @@
+
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+button {
+    margin-left: 5%;
+    margin-right:5%;
+}
+#heading{
+    margin-top: 30vh
+}
+
+
+.roboto-mono-text {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }

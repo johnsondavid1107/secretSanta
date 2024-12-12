@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Who is this?</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row justify-content-center" id="heading">
+            <h1 class="roboto-mono-text">Is this Gina?</h1>
+        </div>
+        <div class="row justify-content-center space-around" style="margin-top: 2vh;">
+            <button id="yes" class="btn btn-success">Yes</button>
+            <button id="no" class="btn btn-danger">No</button>
+        </div>
+
+        <audio id="player">
+
+            <source src="./assets/rangers-goal-song.mp3" type="audio/mpeg">
+            <p style="color: white;">Your browser does not support the audio element.</p>
+        </audio>
+        <!-- <embed src="/assets/rangers-goal-song.mp3" type="audio" autostart="true" hidden="true"> -->
+
+    </div>
+</body>
+
+
+<script>
+    const audio = document.getElementById("player")
+
+    document.getElementById("no").addEventListener("click", function () {
+        alert("GO get Gina")
+    })
+    document.getElementById("yes").addEventListener("click", function () {
+        audio.play()
+    })
+
+
+</script>
+
+</html>
