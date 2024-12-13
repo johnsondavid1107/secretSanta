@@ -16,34 +16,74 @@
 <body>
 
     <div class="container">
-
-        <div class="row justify-content-center" id="heading">
-            <h1 class="roboto-mono-text">Is this Gina?</h1>
-        </div>
-        <div class="row justify-content-center space-around" style="margin-top: 2vh;">
-            <button id="yes" class="btn btn-success">Yes</button>
-            <button id="no" class="btn btn-danger">No</button>
+        <div class="marquee">
+            <span id="marqueeText" class="roboto-mono-text">HEY! HEY! HEY HEY HEY!</span>
         </div>
 
-        <audio id="player">
+        <div id="main">
+            <div class="row justify-content-center" id="heading">
+                <h1 class="roboto-mono-text">Is this Gina?</h1>
+            </div>
+            <div class="row justify-content-center space-around" style="margin-top: 2vh;">
+                <button id="yes" class="btn btn-success">Yes</button>
+                <button id="no" class="btn btn-danger">No</button>
+            </div>
+        </div>
+
+        <section id="content" style="display: none;">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/1200px-New_York_Rangers.svg.png"
+                        alt="" width="100%"></div>
+                <p>vs.</p>
+                <div class="col-6"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/1200px-New_York_Rangers.svg.png"
+                        alt="" width="100%"></div>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <p>You are going to the Ranger game!!!</p>
+            </div>
+
+        </section>
+
+        <!-- Plays the Rangers song -->
+        <!-- <audio id="player">
 
             <source src="./assets/rangers-goal-song.mp3" type="audio/mpeg">
             <p style="color: white;">Your browser does not support the audio element.</p>
-        </audio>
-        <!-- <embed src="/assets/rangers-goal-song.mp3" type="audio" autostart="true" hidden="true"> -->
+        </audio> -->
+
 
     </div>
 </body>
 
 
 <script>
-    const audio = document.getElementById("player")
+    //const audio = document.getElementById("player")
+
+    let changeStyle = function () {
+        document.body.style.backgroundColor = "#0038A8"
+        document.getElementById("main").style.display = "none"
+        document.getElementById("content").style.display = "block"
+        const marqueeText = document.getElementById('marqueeText');
+        marqueeText.style.animation = "scroll 15s linear infinite";
+        marqueeText.style.animationDelay = "5s";
+
+
+
+    }
 
     document.getElementById("no").addEventListener("click", function () {
         alert("GO get Gina")
     })
+
+
     document.getElementById("yes").addEventListener("click", function () {
-        audio.play()
+        changeStyle()
+
+        //audio.play()
     })
 
 
