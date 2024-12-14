@@ -30,46 +30,87 @@
             </div>
         </div>
 
+
+
         <section id="content" style="display: none;">
-            <div class="row d-flex justify-content-center">
-                <div class="col-6"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/1200px-New_York_Rangers.svg.png"
-                        alt="" width="100%"></div>
-                <p>vs.</p>
-                <div class="col-6"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/1200px-New_York_Rangers.svg.png"
-                        alt="" width="100%"></div>
+
+            <div class="row" style="margin-top: 12vh;">
+                <div class="col-12">
+                    <h1 class="roboto-mono-text text-center">
+                        Tuesday, January 21st, 7:00PM EST
+                    </h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <h3 class="roboto-mono-text ">2 Tickets</h3>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5vh;">
+                <div class="col-5 d-flex justify-content-end">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/1200px-New_York_Rangers.svg.png"
+                        alt="" width="100%" />
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <h2 class="roboto-mono-text">VS.</h2>
+                </div>
+                <!-- <p>vs.</p> -->
+                <div class="col-5 d-flex justify-content-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Ottawa_Senators_2020-2021_logo.svg/440px-Ottawa_Senators_2020-2021_logo.svg.png"
+                        alt="" width="100%" />
+
+                </div>
+
+            </div>
+
+            <div class="row text-center" style="margin-top: 5vh;">
+                <div class="col-12">
+                    <h1 class="roboto-mono-text">Madison Square Garden</h1>
+                </div>
+            </div>
+
+            <div class="row text-center" style="margin-top: 5vh;">
+                <div class="col-12">
+                    <h1 class="roboto-mono-text">LETS GO RANGERS!!!</h1>
+                </div>
             </div>
 
 
-            <div class="row justify-content-center">
-                <p>You are going to the Ranger game!!!</p>
-            </div>
 
         </section>
 
+
+
         <!-- Plays the Rangers song -->
-        <!-- <audio id="player">
+        <audio id="player">
 
             <source src="./assets/rangers-goal-song.mp3" type="audio/mpeg">
             <p style="color: white;">Your browser does not support the audio element.</p>
-        </audio> -->
+        </audio>
 
 
     </div>
+
+    <footer class="footer" style="visibility: hidden;" id="bootstrapFooter">
+        <div class="container d-flex justify-content-center">
+            <span class="roboto-mono-text">Have fun G!!!</span>
+        </div>
+    </footer>
 </body>
 
 
 <script>
-    //const audio = document.getElementById("player")
+    const audio = document.getElementById("player")
 
     let changeStyle = function () {
         document.body.style.backgroundColor = "#0038A8"
         document.getElementById("main").style.display = "none"
+        document.getElementById("bootstrapFooter").style.visibility = "visible"
         document.getElementById("content").style.display = "block"
         const marqueeText = document.getElementById('marqueeText');
         marqueeText.style.animation = "scroll 15s linear infinite";
-        marqueeText.style.animationDelay = "5s";
+        marqueeText.style.animationDelay = "9s";
+        marqueeText.style.color = "red"
+
 
 
 
@@ -83,7 +124,7 @@
     document.getElementById("yes").addEventListener("click", function () {
         changeStyle()
 
-        //audio.play()
+        audio.play()
     })
 
 
