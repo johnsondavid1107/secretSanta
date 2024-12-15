@@ -10,19 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Question_Mark.svg">
     <title>Who is this?</title>
+
 </head>
 
 <body>
 
     <div class="container">
         <div class="marquee">
-            <span id="marqueeText" class="roboto-mono-text">HEY! HEY! HEY HEY HEY!</span>
+            <span id="marqueeText" class="roboto-mono-text">HEY HEY HEY! HEY! HEY!</span>
         </div>
 
         <div id="main">
             <div class="row justify-content-center" id="heading">
-                <h1 class="roboto-mono-text">Is this Gina?</h1>
+                <h1 class="roboto-mono-text">Is this Angie?</h1>
             </div>
             <div class="row justify-content-center space-around" style="margin-top: 2vh;">
                 <button id="yes" class="btn btn-success">Yes</button>
@@ -124,7 +126,7 @@
     document.getElementById("yes").addEventListener("click", function () {
         changeStyle()
 
-        audio.play()
+        //audio.play()
     })
 
 
