@@ -63,7 +63,7 @@ img{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
     img {
       padding:0;
       width: 35vw;
