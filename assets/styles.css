@@ -71,4 +71,8 @@ img{
     .footer span {
       font-size: 1.8em;
     }
+
+    body{
+      background-color: yellow;
+    }
   }
