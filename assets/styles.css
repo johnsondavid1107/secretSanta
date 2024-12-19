@@ -20,6 +20,16 @@ button {
   color: white;
 }
 
+
+.roboto-condensed-madison {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -1px;
+  color: gold;
+}
+
 .marquee {
   position: fixed;
   top: 0;
@@ -63,7 +73,7 @@ img{
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
     img {
       padding:0;
       width: 35vw;
