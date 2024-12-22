@@ -28,6 +28,8 @@ button {
   font-style: normal;
   letter-spacing: -1px;
   color: gold;
+  border-top: solid 3px gold;
+  border-bottom: solid 3px gold;
 }
 
 .marquee {
